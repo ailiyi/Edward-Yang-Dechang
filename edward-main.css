@@ -1,0 +1,174 @@
+<style type="text/css">@import url("normalize.css");</style>
+
+.grid-container{
+    display: grid;
+    grid-column-gap: 1vmin;
+    grid-template-columns: 0.25fr 0,25fr 0.25fr 0.25fr;
+    grid-template-rows: 0.25fr 0,25fr 0.25fr 0.25fr;
+    grid-template-areas: "header header header header"
+                         "img img sidebar sidebar"
+                         "h2 h2 h2 h2"
+                         "main-1 main-1 main-1 main-1"
+                         "main-2 main-2 main-3 main-3"
+                         "footer footer footer footer"
+                         "form form form form";
+  }
+  .header{
+    grid-area: header;
+    color: #ffffff;
+    background: #000000;
+    font-family: Noto Serif TC,monospace;
+    font-size: 8vmin;
+    font-weight: bold;
+    text-align: center;
+    padding: 2vmin;
+    margin: 1vmin;
+    border-radius: 10px;
+  }
+  .header div{
+    font-size: 2vmin;
+    padding: 1vmin;
+  }
+  .img{
+    grid-area: img;
+    background: #000;
+    margin: 1vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+  }
+  .img figure{
+    margin: 1vmin;
+  }
+  .img img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .img figcaption {
+    color: #fff;
+    font-family: Noto Serif TC,monospace;
+    font-weight: bold;
+    font-size: 2vmax;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sidebar{
+    grid-area: sidebar;
+    background: #000;
+    padding: 2vmin;
+    margin: 1vmin; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .movie-list{
+    color: #fff;
+    font-family: Noto Serif TC,monospace;
+    font-size: 2vmax;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.2;
+    margin: auto;
+    padding: 1vmin;
+  }
+  .h2{
+    grid-area: h2;
+    background: #fff;
+    color: #000;
+    font-family: Changa,monospace;
+    font-weight: bold;
+    font-size: 4vmin;
+    text-align: center;
+    padding: 1vmin;
+    margin: 1vmin;
+  }
+  .main-1{
+    grid-area: main-1;
+    background: #000;
+    color: #fff;
+    font-family: Noto Serif TC,monospace;
+    font-size: 3vmin;
+    font-weight: bold;
+    text-align: left;
+    padding: 2vmin;
+    margin: 1vmin;
+    position: relative;
+    border-radius: 10px;
+  }
+  .main-2{
+    grid-area: main-2;
+    background: #000;
+    color: #fff;
+    font-family: Noto Serif TC,monospace;
+    font-size: 3vmin;
+    font-weight: bold;
+    text-align: left;
+    padding: 2vmin;
+    margin: 1vmin;
+    position: relative;
+    border-radius: 10px;
+  }
+  .main-3{
+    grid-area: main-3;
+    background: #000;
+    color: #fff;
+    font-family: Noto Serif TC,monospace;
+    font-size: 3vmin;
+    font-weight: bold;
+    text-align: left;
+    padding: 2vmin;
+    margin: 1vmin;
+    position: relative;
+    border-radius: 10px;
+  }
+  .a{
+    color: #fff;
+    font-family: Changa,monospace;
+    font-size: 2vmin;
+    text-decoration: none;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1vmin;
+  }
+  .a:hover{
+    color: #000;
+    background: #fff;
+  }
+  .footer{
+    grid-area: footer;
+    background: #000;
+    color: #fff;
+    font-family: Noto Serif TC,monospace;
+    font-size: 2vmin;
+    font-weight: bold;
+    text-align: center;
+    padding: 2vmin;
+    margin: 1vmin;
+    border-radius: 10px;
+  }
+  .form{
+    grid-area: form;
+    background: #000;
+    color: #fff;
+    font-family: Noto Serif TC,monospace;
+    font-size: 2vmin;
+    font-weight: bold;
+    text-align: center;
+    margin: 1vmin;
+    border-radius: 10px;
+  }
+  .text{
+    border-radius: 10px;
+    padding: 1vmin;
+    margin: 2vmin;
+  }
+  .btn{
+    cursor: pointer;
+  }
+  .btn:hover{
+    background: #000;
+    color: #fff;
+  }
