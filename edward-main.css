@@ -1,4 +1,4 @@
-<style type="text/css">@import url("normalize.css");</style>
+@import url("normalize.css");
 
 .grid-container{
     display: grid;
